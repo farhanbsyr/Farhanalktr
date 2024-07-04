@@ -3,7 +3,7 @@ import HeroText from "./hero/HeroText";
 import HeroButton from "./hero/HeroButton";
 import HeroProfile from "./hero/HeroProfile";
 import HeroSecondButton from "./hero/HeroSecondButton";
-import cv from "../assets/CV Farhan.pdf";
+import cv1 from "../assets/CV Farhan.pdf";
 
 function Hero({}) {
   return (
@@ -14,7 +14,7 @@ function Hero({}) {
       <div className="flex w-[60%] flex-col gap-4 justify-start">
         <HeroText />
         <div className="flex gap-3 items-center justify-items-center">
-          <HeroButton words={"Download CV"} linked={cv} />
+          <HeroButton words={"Download CV"} linked={cv1} />
           <HeroSecondButton words={"Contact Me"} linked={"contact"} />
         </div>
       </div>
