@@ -4,9 +4,9 @@ import github from "../assets/github-icon.svg";
 import linkedin from "../assets/linkedin-square-icon.svg";
 function SideApp() {
   return (
-    <div className=" fixed top-1/2 left-10 transform -translate-y-1/2">
+    <div className="  md:fixed md:top-1/2 md:left-7  lg:left-10 md:transform  md:-translate-y-1/2">
       {" "}
-      <div className="flex flex-col gap-4">
+      <div className="flex  md:flex-col justify-center gap-4 ">
         <a target="_blank" href="https://www.instagram.com/farhanbsyr/">
           <SideIcon icons={instagram} />
         </a>

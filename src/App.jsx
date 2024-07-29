@@ -21,9 +21,8 @@ class App extends React.Component {
     return (
       <div className="font-Poppins">
         <HeaderApp />
-        <div className="mx-[150px]">
+        <div className="lg:mx-[150px] md:mx-24 sm:mx-20">
           <Hero />
-          <SideApp />
           <About />
           <Skills />
           <Project project={this.state.project} />
