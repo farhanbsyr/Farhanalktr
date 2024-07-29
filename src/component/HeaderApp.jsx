@@ -34,7 +34,9 @@ function HeaderApp() {
   return (
     <nav className=" z-50 fixed top-0 font-sans bg-white w-[100%] shadow-md">
       <div className="container-header py-5 mx-28 items-center flex flex-row justify-between">
-        <div className="logo-app text-[1.75rem] font-[600]">FarhanAlktr</div>
+        <div className="logo-app text-[1.75rem] font-[600]">
+          FarhanAlktrCOBA
+        </div>
         <ul className="flex flex-row gap-4 text-xl">
           <li>
             <Link
