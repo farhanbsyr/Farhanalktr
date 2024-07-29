@@ -4,7 +4,6 @@ import About from "./component/About";
 import HeaderApp from "./component/HeaderApp";
 import Hero from "./component/Hero";
 import Project from "./component/Project";
-import SideApp from "./component/SideApp";
 import Skills from "./component/Skills";
 import { getAllNotes } from "./utils/local-data";
 import Contact from "./component/Contact";
@@ -21,7 +20,7 @@ class App extends React.Component {
     return (
       <div className="font-Poppins">
         <HeaderApp />
-        <div className="lg:mx-[150px] md:mx-24 sm:mx-20">
+        <div className="lg:mx-[150px] md:mx-24 sm:mx-20 mx-8">
           <Hero />
           <About />
           <Skills />

@@ -22,7 +22,7 @@ function Hero({}) {
           <SideApp />
         </div>
       </div>
-      <div className="lg:w-[40%] md:w-[50%] text-center ">
+      <div className="lg:w-[40%] md:w-[50%] w-[65%] text-center ">
         <HeroProfile />
       </div>
     </section>

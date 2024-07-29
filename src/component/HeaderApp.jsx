@@ -2,9 +2,12 @@ import { useState, useEffect } from "react";
 import { Link, animateScroll as scroll, scrollSpy } from "react-scroll";
 import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
+import { FaBars, FaTimes } from "react-icons/fa"; // Import icons
+
 function HeaderApp() {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,19 +26,44 @@ function HeaderApp() {
       });
     };
 
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
-    // Cleanup
+    if (windowWidth >= 768) {
+      setIsMenuToggled(true);
+    } else {
+      setIsMenuToggled(false);
+    }
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
+
+      window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [windowWidth]);
 
   return (
-    <nav className=" z-50 fixed top-0 font-sans bg-white w-[100%] shadow-md">
-      <div className="container-header py-5 sm:mx-14 md:mx-20 lg:mx-28 items-center flex flex-row justify-between">
-        <div className="logo-app text-[1.75rem] font-[600]">FarhanAlktr</div>
-        <ul className="flex flex-row gap-4 text-xl">
+    <nav className=" z-50 fixed top-0 font-sans bg-white  w-[100%] shadow-md">
+      <div className="container-header py-5 mx-8 sm:mx-14 md:mx-20 lg:mx-28 items-center flex flex-row justify-between">
+        <div className="logo-app text-[1.75rem] font-semibold">FarhanAlktr</div>
+
+        <button
+          onClick={() => setIsMenuToggled(!isMenuToggled)}
+          className=" md:hidden flex items-center z-50 text-2xl"
+        >
+          {isMenuToggled ? <FaTimes /> : <FaBars />}
+        </button>
+
+        <ul
+          className={`md:static text-white absolute w-[75%] sm:w-[60%] top-0 right-0 bg-gray-200 bg-opacity-40 md:bg-white  z-10 transition-transform duration-300 ease-in-out md:p-0 py-12 justify-center md:justify-end items-center md:items-end px-10  flex flex-col md:flex-row gap-7  sm:gap-10 md:gap-4 md:text-xl text-xl sm:text-3xl ${
+            isMenuToggled
+              ? " h-[100vh] md:h-[100%] md:backdrop-blur-none backdrop-blur-lg  transform translate-x-0  "
+              : "  transform translate-x-full"
+          }`}
+        >
           <li>
             <Link
               to="home"
