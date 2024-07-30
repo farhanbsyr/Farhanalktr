@@ -10,6 +10,7 @@ function HeaderApp() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
+    setActiveLink("home");
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
 
