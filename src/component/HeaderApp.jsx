@@ -10,6 +10,22 @@ function HeaderApp() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    if (windowWidth >= 768) {
+      setIsMenuToggled(true);
+    } else {
+      setIsMenuToggled(false);
+    }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowWidth]);
+  useEffect(() => {
     setActiveLink("home");
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -27,24 +43,12 @@ function HeaderApp() {
       });
     };
 
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
-
-    if (windowWidth >= 768) {
-      setIsMenuToggled(true);
-    } else {
-      setIsMenuToggled(false);
-    }
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-
-      window.removeEventListener("resize", handleResize);
     };
-  }, [windowWidth]);
+  }, []);
 
   return (
     <nav className=" z-50 fixed top-0 font-sans bg-white  w-[100%] shadow-md">
