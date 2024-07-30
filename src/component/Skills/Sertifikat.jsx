@@ -9,8 +9,8 @@ import uiUx from "../../sertif/Sertiikat Kelas CompleteUIDesigner -Angga-1.png";
 
 function Sertifikat() {
   return (
-    <div className="border-2 w-[70%]  h-min  rounded-md shadow-lg p-6 border-gray-200 ">
-      <div className="flex flex-row flex-wrap gap-6 justify-center ">
+    <div className="border-2 w-[100%] 2xl:w-[70%]    rounded-md shadow-lg p-6 border-gray-200 ">
+      <div className="flex flex-row flex-wrap gap-6 h-min 2xl:h-full justify-center ">
         <SertifikatImage
           sertifImage={udeFullStack}
           sertifName={"The Complete Website Fullstack"}

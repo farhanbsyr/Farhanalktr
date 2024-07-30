@@ -8,7 +8,7 @@ function Skills() {
       <div className="mb-6 text-[40px] font-semibold text-center">
         <h1>Skills & Certificate</h1>
       </div>
-      <div className="flex flex-row gap-6">
+      <div className="flex 2xl:flex-row flex-col gap-6">
         <SkillSec />
         <Sertifikat />
       </div>
