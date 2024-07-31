@@ -4,8 +4,8 @@ function Contact() {
   return (
     <section id="contact" className="text-center mt-[100px]">
       <h1 className="text-[40px] mb-6 font-semibold">Contact</h1>
-      <div className="mx-[75px]">
-        <p className="text-lg ">
+      <div className="md:mx-[75px] mx-0">
+        <p className="sm:text-lg text-base">
           Apart from that, I am currently open to opportunities to work or
           intern at your company. If you have an interesting project or need
           extra help, don't hesitate to contact me. <br /> <br /> Feel free to
