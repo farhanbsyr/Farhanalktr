@@ -1,24 +1,17 @@
-import { useEffect, useState, React } from "react";
+import { React } from "react";
+
+import { useMediaQuery } from "react-responsive";
 function SertifikatImage({ sertifImage, sertifName }) {
-  const [isTablet, setIsTablet] = useState(
-    window.matchMedia("(max-width:1235px)").matches
-  );
-  useEffect(() => {
-    const handleResize = () => {
-      setIsTablet(window.matchMedia("(max-width:1235px)").matches);
-    };
+  const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
+  const isLaptop = useMediaQuery({ query: "(max-width: 1235px)" });
 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  // Contoh penggunaan isLaptop, jika diperlukan
+  const imageWidth = isTablet ? "100%" : isLaptop ? 175 : 200;
 
   return (
     <img
-      className="transform duration-500 hover:scale-125"
-      width={isTablet ? 200 : 175}
+      className="transform duration-500 md:hover:scale-125"
+      width={imageWidth}
       height={isTablet ? 120 : 120}
       src={sertifImage}
       alt={sertifName}
