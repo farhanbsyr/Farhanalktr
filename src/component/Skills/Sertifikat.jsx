@@ -37,7 +37,7 @@ function Sertifikat() {
   ];
   return (
     <div className="border-2 w-[100%] 2xl:w-[70%]    rounded-md shadow-lg p-6 border-gray-200 ">
-      <div className="flex flex-row md:flex-wrap gap-10 h-min 2xl:h-full justify-center ">
+      <div className="flex flex-row md:flex-wrap gap-4 h-min 2xl:h-full justify-center ">
         {isTablet ? (
           <Swiper
             centeredSlides={true}
@@ -48,9 +48,8 @@ function Sertifikat() {
             className="mySwiper "
           >
             {sertifikatData.map((sertif, index) => (
-              <SwiperSlide className="flex justify-center">
+              <SwiperSlide key={index} className="flex justify-center">
                 <SertifikatImage
-                  key={index}
                   sertifImage={sertif.image}
                   sertifName={sertif.name}
                 />

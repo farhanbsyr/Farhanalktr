@@ -8,21 +8,12 @@ import tailwincss from "../../assets/tailwind-css-icon.svg";
 import bootsrap from "../../assets/bootstrap-5-logo-icon.svg";
 import vue from "../../assets/vue-dot-js.svg";
 import css from "../../assets/css-icon.svg";
+import { useMediaQuery } from "react-responsive";
 function SkillSec() {
-  const [isTablet, setIsTablet] = useState(
-    window.matchMedia("(max-width:1235px)").matches
-  );
-  useEffect(() => {
-    const handleResize = () => {
-      setIsTablet(window.matchMedia("(max-width:1235px)").matches);
-    };
+  const isTablet = useMediaQuery({ query: "(max-width: 768px)" });
+  const isLaptop = useMediaQuery({ query: "(max-width: 1235px)" });
 
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const imageWidth = isTablet ? "100%" : isLaptop ? 175 : 200;
 
   return (
     <div className="border-2 rounded-md shadow-lg  p-6 border-gray-200 w-[100%] 2xl:w-[30%] ">
