@@ -25,24 +25,19 @@ let project = [
   },
   {
     id: "project-2",
-    title: "Contact Form",
-    linked: "https://contact-form-blush-phi.vercel.app",
-    images: "Form.png",
-    body: "The Contact Form that I created uses RealTime Validation, where this feature is very useful in reducing user errors during the submission process. Apart from that, this is also good for user experience.",
+    title: "Netflix Clone",
+    linked: "https://netflixclone-pm371exyl-farhanbsyrs-projects.vercel.app/",
+    images: "netflix.png",
+    body: "Netflix Clone is a website that duplicates Netflix. This site includes several features, such as the login feature, which will use authentication via Firebase. Then, the movie feature is taken using the fetch API from TMDB. (in progress)",
     skills: [
       {
-        icon: "html-icon.svg",
-        altt: "html",
+        icon: "physics.png",
+        altt: "reactJS",
         lebar: "30px",
       },
       {
         icon: "css-icon.svg",
-        altt: "css",
-        lebar: "30px",
-      },
-      {
-        icon: "js.png",
-        altt: "javascript",
+        altt: "vanilla css",
         lebar: "30px",
       },
     ],

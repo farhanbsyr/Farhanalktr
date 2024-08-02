@@ -3,7 +3,7 @@ import HeroText from "./hero/HeroText";
 import HeroButton from "./hero/HeroButton";
 import HeroProfile from "./hero/HeroProfile";
 import HeroSecondButton from "./hero/HeroSecondButton";
-import cv1 from "../assets/CV Farhan.pdf";
+import cv1 from "../assets/CV.pdf";
 import SideApp from "./SideApp";
 
 function Hero({}) {

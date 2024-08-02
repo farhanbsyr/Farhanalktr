@@ -10,7 +10,7 @@ function ProjectCard({ images, title, body, skills, linked }) {
     <a
       target="_blank"
       href={linked}
-      className="px-4 transform duration-700 hover:scale-110 pt-4 pb-6 flex shadow-lg border-2 border-gray-100 mb-5 sm:w-80 lg:w-[24rem]  2xl:w-[28rem] flex-col gap-2 rounded-md min-h-[5px] h-max"
+      className="px-4 transform duration-700 hover:scale-110 pt-4 pb-6 flex shadow-lg border-2 border-gray-100 mb-5 sm:w-80 lg:w-[24rem]  2xl:w-[28rem] flex-col gap-2 rounded-md"
     >
       <div className=" bg-cover h-[12.5rem]">
         <img
