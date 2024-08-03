@@ -26,9 +26,9 @@ let project = [
   {
     id: "project-2",
     title: "Netflix Clone",
-    linked: "https://netflixclone-pm371exyl-farhanbsyrs-projects.vercel.app/",
+    linked: "https://clone-netflix-portfolio.vercel.app/",
     images: "netflix.png",
-    body: "Netflix Clone is a website that duplicates Netflix. This site includes several features, such as the login feature, which will use authentication via Firebase. Then, the movie feature is taken using the fetch API from TMDB. (in progress)",
+    body: "Netflix Clone is a website that duplicates Netflix. This site includes several features, such as the login feature, which will use authentication via Firebase Then, the movie feature is taken using the fetch API from TMDB. (in progress)",
     skills: [
       {
         icon: "physics.png",
