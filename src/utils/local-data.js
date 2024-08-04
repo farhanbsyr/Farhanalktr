@@ -3,6 +3,7 @@ let project = [
     id: "project-1",
     title: "TodoApp",
     linked: "https://notes-app-with-api-ten.vercel.app",
+    github: "https://github.com/farhanbsyr/NotesApp-WithAPI",
     images: "todoApps.png",
     body: "TodoApps is an application for keeping records of activities that will and have been carried out. In this app I developed using the fetch API and localStorage features for adding, deleting, saving, etc.",
     skills: [
@@ -27,6 +28,7 @@ let project = [
     id: "project-2",
     title: "Netflix Clone",
     linked: "https://clone-netflix-portfolio.vercel.app/",
+    github: "https://github.com/farhanbsyr/Clone_Netflix",
     images: "netflix.png",
     body: "Netflix Clone is a website that duplicates Netflix. This site includes several features, such as the login feature, which will use authentication via Firebase Then, the movie feature is taken using the fetch API from TMDB. (in progress)",
     skills: [
@@ -46,6 +48,7 @@ let project = [
     id: "project-3",
     title: "Traffic Pricing",
     linked: "https://interactive-pricing-hazel-alpha.vercel.app",
+    github: "https://github.com/farhanbsyr/InteractivePricing",
     images: "TrafficPricing.png",
     body: "Traffic Pricing is an interactive feature for users to determine the appropriate price for purchasing a service.",
     skills: [
@@ -70,6 +73,7 @@ let project = [
     id: "project-4",
     title: "Homzy",
     linked: "https://github.com/farhanbsyr/Homzy-Real-Estate.git",
+    github: "https://github.com/farhanbsyr/Homzy-Real-Estate.git",
     images: "homzy.png",
     body: "Homzy is a digital platform that provides some of the best properties that are livable. This website aims to make it easier for sellers to promote their properties to buyers.",
     skills: [

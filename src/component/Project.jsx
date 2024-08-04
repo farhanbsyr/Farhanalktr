@@ -16,6 +16,7 @@ function Project({ project }) {
               body={proj.body}
               skills={proj.skills}
               linked={proj.linked}
+              github={proj.github}
             />
           );
         })}

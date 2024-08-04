@@ -14,7 +14,7 @@ function ProjectText({ title, body }) {
 
   // Truncate the body text and add ellipsis if needed
   const displayText = shouldTruncate
-    ? `${body.substring(0, maxLength)} ...`
+    ? `${body.substring(0, maxLength)} ....`
     : body;
 
   console.log(body.length);
@@ -25,7 +25,7 @@ function ProjectText({ title, body }) {
         {body.substring(0, maxLength)}
       </p>
       <a href="" className="tracking-wider text-[24px] text-blue-600">
-        {` ${body.length > maxLength ? "..." : ""}`}
+        {` ${body.length > maxLength ? "...." : ""}`}
       </a>
     </div>
   );
