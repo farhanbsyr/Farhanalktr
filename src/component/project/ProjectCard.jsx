@@ -1,11 +1,18 @@
 import React from "react";
 import ProjectBottom from "./ProjectBottom";
 import { useMediaQuery } from "react-responsive";
-import linkedin from "../../assets/linkedin-square-icon.svg";
 import { FaGithub } from "react-icons/fa";
 import preview from "../../assets/preview-svgrepo-com.svg";
 
-function ProjectCard({ images, title, body, skills, linked, github }) {
+function ProjectCard({
+  images,
+  title,
+  body,
+  skills,
+  linked,
+  github,
+  detailBD,
+}) {
   const isNoteBook = useMediaQuery({ query: "(max-width: 1100px)" });
   const isNoteBook2 = useMediaQuery({ query: "(min-width: 970px)" });
 
@@ -51,7 +58,12 @@ function ProjectCard({ images, title, body, skills, linked, github }) {
           </div>
         </div>
       </div>
-      <ProjectBottom title={title} body={body} skills={skills} />
+      <ProjectBottom
+        title={title}
+        body={body}
+        skills={skills}
+        detailBD={detailBD}
+      />
     </div>
   );
 }

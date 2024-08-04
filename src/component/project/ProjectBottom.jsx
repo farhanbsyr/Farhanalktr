@@ -7,10 +7,10 @@ import SkillIcon from "../Skills/SkillIcon";
 // import Ijs from "../../assets/js (1).png";
 // import Itailwind from "../../assets/tailwind-css-icon.svg";
 
-function ProjectBottom({ title, body, skills }) {
+function ProjectBottom({ title, body, skills, detailBD }) {
   return (
     <div className="flex h-[12.5rem] px-4 flex-col justify-between">
-      <ProjectText title={title} body={body} />
+      <ProjectText title={title} body={body} detailBD={detailBD} />
       <div className="flex flex-row gap-2 ">
         {skills.map((element, index) => (
           <SkillIcon

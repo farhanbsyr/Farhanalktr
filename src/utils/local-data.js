@@ -5,7 +5,13 @@ let project = [
     linked: "https://notes-app-with-api-ten.vercel.app",
     github: "https://github.com/farhanbsyr/NotesApp-WithAPI",
     images: "todoApps.png",
-    body: "TodoApps is an application for keeping records of activities that will and have been carried out. In this app I developed using the fetch API and localStorage features for adding, deleting, saving, etc.",
+    body: "TodoApps is a web application designed for managing and organizing your tasks and notes. This application offers a range of features to help you efficiently keep track of your activities. Below are the key features implemented:",
+    detailBD: [
+      "Add Notes, allows users to input new notes using the Fetch API. The inputted data is also stored in local storage to ensure persistence even after the page is refreshed.",
+      "Saved Notes, facilitates the separation of completed notes from ongoing ones, helping users manage their tasks more effectively.",
+      "Delete Notes, provides the functionality to remove notes from local storage, ensuring that outdated or irrelevant notes can be cleared out.",
+      "Undo Notes, Enables users to restore notes that have been saved but need to be placed back among unsaved notes, allowing for easy recovery and reorganization.",
+    ],
     skills: [
       {
         icon: "html-icon.svg",
@@ -30,7 +36,15 @@ let project = [
     linked: "https://clone-netflix-portfolio.vercel.app/",
     github: "https://github.com/farhanbsyr/Clone_Netflix",
     images: "netflix.png",
-    body: "Netflix Clone is a website that duplicates Netflix. This site includes several features, such as the login feature, which will use authentication via Firebase Then, the movie feature is taken using the fetch API from TMDB. (in progress)",
+    body: "Netflix Clone is a web application designed to replicate the core functionalities of Netflix, complete with a range of features to enhance the user experience. This project is intended for portfolio purposes. Below are the key features implemented:",
+    detailBD: [
+      "Login Feature, Users can access the homepage using dummy email and password credentials. This feature includes validation to ensure accurate login data and minimize errors.",
+      "Logout Feature, Allows users to log out of their accounts and return to the login page with ease, ensuring session security and privacy.",
+      "SignUp Feature, Users can register by entering a dummy username, email, and password. This feature includes strict validation to ensure data integrity in the database",
+      "Authentication Feature, Utilizes Firebase for managing user sessions, including login and logout. This feature enables real-time tracking of user status and ensures secure access to the main page.",
+      "Movie List Feature, Displays a list of movies using the Fetch API integrated with TMDB (The Movie Database). Users can browse a variety of movies and obtain up-to-date information.",
+      "Movie Detail Feature, Provides comprehensive details about movies using the Fetch API from TMDB. Users can view clips and relevant descriptions of the films.",
+    ],
     skills: [
       {
         icon: "physics.png",
