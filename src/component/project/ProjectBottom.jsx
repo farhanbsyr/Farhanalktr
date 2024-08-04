@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectText from "./ProjectText";
-import SkillIcon from "../Skills/SkillIcon";
 // import Ihtml from "../../assets/html-icon.svg";
 // import Ireact from "../../assets/physics.png";
 // import Icss from "../../assets/css-icon.svg";
@@ -9,18 +8,8 @@ import SkillIcon from "../Skills/SkillIcon";
 
 function ProjectBottom({ title, body, skills, detailBD }) {
   return (
-    <div className="flex h-[12.5rem] px-4 flex-col justify-between">
+    <div className="flex h-full px-4 flex-col justify-between">
       <ProjectText title={title} body={body} detailBD={detailBD} />
-      <div className="flex flex-row gap-2 ">
-        {skills.map((element, index) => (
-          <SkillIcon
-            key={index}
-            icon={element.icon}
-            nameIcon={element.altt}
-            widSkill={element.lebar}
-          />
-        ))}
-      </div>
     </div>
   );
 }

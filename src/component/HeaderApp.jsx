@@ -52,7 +52,7 @@ function HeaderApp() {
 
   return (
     <nav className=" z-50 fixed top-0 font-sans bg-white w-full  shadow-md">
-      <div className="container-header py-5 mx-8 sm:mx-14 md:mx-20 lg:mx-28 items-center flex flex-row justify-between">
+      <div className="container-header py-5 mx-8 sm:mx-14 md:mx-20 lg:mx-22 items-center flex flex-row justify-between">
         <div className="logo-app text-[1.75rem] font-semibold">FarhanAlktr</div>
 
         <button

@@ -1,6 +1,34 @@
 let project = [
   {
     id: "project-1",
+    title: "Netflix Clone",
+    linked: "https://clone-netflix-portfolio.vercel.app/",
+    github: "https://github.com/farhanbsyr/Clone_Netflix",
+    images: "netflix.png",
+    body: "Netflix Clone is a web application designed to replicate the core functionalities of Netflix, complete with a range of features to enhance the user experience. This project is intended for portfolio purposes. Below are the key features implemented:",
+    detailBD: [
+      "Login Feature, Users can access the homepage using dummy email and password credentials. This feature includes validation to ensure accurate login data and minimize errors.",
+      "Logout Feature, Allows users to log out of their accounts and return to the login page with ease, ensuring session security and privacy.",
+      "SignUp Feature, Users can register by entering a dummy username, email, and password. This feature includes strict validation to ensure data integrity in the database",
+      "Authentication Feature, Utilizes Firebase for managing user sessions, including login and logout. This feature enables real-time tracking of user status and ensures secure access to the main page.",
+      "Movie List Feature, Displays a list of movies using the Fetch API integrated with TMDB (The Movie Database). Users can browse a variety of movies and obtain up-to-date information.",
+      "Movie Detail Feature, Provides comprehensive details about movies using the Fetch API from TMDB. Users can view clips and relevant descriptions of the films.",
+    ],
+    skills: [
+      {
+        icon: "physics.png",
+        altt: "reactJS",
+        lebar: "30px",
+      },
+      {
+        icon: "css-icon.svg",
+        altt: "vanilla css",
+        lebar: "30px",
+      },
+    ],
+  },
+  {
+    id: "project-2",
     title: "TodoApp",
     linked: "https://notes-app-with-api-ten.vercel.app",
     github: "https://github.com/farhanbsyr/NotesApp-WithAPI",
@@ -30,34 +58,7 @@ let project = [
       },
     ],
   },
-  {
-    id: "project-2",
-    title: "Netflix Clone",
-    linked: "https://clone-netflix-portfolio.vercel.app/",
-    github: "https://github.com/farhanbsyr/Clone_Netflix",
-    images: "netflix.png",
-    body: "Netflix Clone is a web application designed to replicate the core functionalities of Netflix, complete with a range of features to enhance the user experience. This project is intended for portfolio purposes. Below are the key features implemented:",
-    detailBD: [
-      "Login Feature, Users can access the homepage using dummy email and password credentials. This feature includes validation to ensure accurate login data and minimize errors.",
-      "Logout Feature, Allows users to log out of their accounts and return to the login page with ease, ensuring session security and privacy.",
-      "SignUp Feature, Users can register by entering a dummy username, email, and password. This feature includes strict validation to ensure data integrity in the database",
-      "Authentication Feature, Utilizes Firebase for managing user sessions, including login and logout. This feature enables real-time tracking of user status and ensures secure access to the main page.",
-      "Movie List Feature, Displays a list of movies using the Fetch API integrated with TMDB (The Movie Database). Users can browse a variety of movies and obtain up-to-date information.",
-      "Movie Detail Feature, Provides comprehensive details about movies using the Fetch API from TMDB. Users can view clips and relevant descriptions of the films.",
-    ],
-    skills: [
-      {
-        icon: "physics.png",
-        altt: "reactJS",
-        lebar: "30px",
-      },
-      {
-        icon: "css-icon.svg",
-        altt: "vanilla css",
-        lebar: "30px",
-      },
-    ],
-  },
+
   {
     id: "project-3",
     title: "Traffic Pricing",
