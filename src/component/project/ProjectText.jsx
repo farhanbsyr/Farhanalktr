@@ -23,19 +23,20 @@ function ProjectText({ title, body, detailBD }) {
   }
   const isDetailBDValid = Array.isArray(detailBD);
   return (
-    <div className="projecttext py-2">
+    <div className="py-2">
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-500 text-[16px] inline">
-        {body.substring(0, maxLength)}
+      <p className="text-gray-500 text-[16px] text-justify  ">
+        {body.substring(0, maxLength)}{" "}
+        {body.length > maxLength && (
+          <span
+            onClick={openModal}
+            className="tracking-wider text-[24px] text-blue-600 cursor-pointer inline "
+          >
+            ....
+          </span>
+        )}
       </p>
-      {body.length > maxLength && (
-        <p
-          onClick={openModal}
-          className="tracking-wider text-[24px] text-blue-600 cursor-pointer inline"
-        >
-          ....
-        </p>
-      )}
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal} // Menutup modal saat klik di luar

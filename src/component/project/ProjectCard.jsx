@@ -16,15 +16,14 @@ function ProjectCard({
   detailBD,
 }) {
   const isNoteBook = useMediaQuery({ query: "(max-width: 1100px)" });
-  const isNoteBook2 = useMediaQuery({ query: "(min-width: 970px)" });
-
-  const imageWidth = isNoteBook ? "lg:w-[20rem]" : "lg:w-[23.8rem]";
-
+  const isMobile = useMediaQuery({ query: "(max-width : 640px)" });
+  const imageWidth = isNoteBook ? "lg:w-[22rem]" : "lg:w-[25rem]";
+  const scaleUp = isMobile ? "" : "hover:scale-110";
   return (
     <div
-      className={`px-4 card transform duration-700 hover:scale-110 pt-4 pb-6 flex shadow-lg border-2 border-gray-100 mb-5 sm:w-[23rem] md:w-[28rem]  ${imageWidth}  2xl:w-[28rem] flex-col gap-2 justify-between rounded-md`}
+      className={`px-4 card transform duration-700 ${scaleUp} md:hover:scale-110 pt-4 pb-6 flex shadow-lg border-2 border-gray-100 mb-5 w-[23rem] sm:w-[24rem] md:w-[28rem]  ${imageWidth}  2xl:w-[28rem] flex-col gap-2 justify-between rounded-md`}
     >
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 h-[392px]">
         <div className=" relative overflow-hidden rounded-md bg-cover h-[12.5rem] ">
           <img
             className="object-cover rounded-md object-top w-full h-full z-[1] hover:bg-black"

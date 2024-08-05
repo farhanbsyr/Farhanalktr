@@ -10,7 +10,7 @@ function Hero({}) {
   return (
     <section
       id="home"
-      className="flex gap-8 md:gap-3 lg:gap-0 mt-[150px] md:flex-row flex-col-reverse  items-center justify-between "
+      className="lg:mx-[120px] md:mx-24 sm:mx-20 mx-8 flex gap-8 md:gap-3 lg:gap-0 mt-[150px] md:flex-row flex-col-reverse  items-center justify-between "
     >
       <div className="flex lg:w-[60%] md:w-[50%] flex-col gap-4 ">
         <HeroText />

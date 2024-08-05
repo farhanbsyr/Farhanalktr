@@ -2,7 +2,10 @@ import React from "react";
 
 function Contact() {
   return (
-    <section id="contact" className="text-center mt-[100px]">
+    <section
+      id="contact"
+      className="text-center mt-[100px] lg:mx-[120px] md:mx-24 sm:mx-20 mx-8"
+    >
       <h1 className="text-[40px] mb-6 font-semibold">Contact</h1>
       <div className="md:mx-[75px] mx-0">
         <p className="sm:text-lg text-base">

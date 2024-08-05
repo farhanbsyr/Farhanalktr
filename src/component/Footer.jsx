@@ -6,7 +6,7 @@ import { SiGmail } from "react-icons/si";
 
 function FooterApp() {
   return (
-    <div id="footer" className="mt-[75px] py-8 bg-black">
+    <div id="footer" className="mt-[75px] lg:mx-[120px] py-8 bg-black">
       <div className="flex flex-row gap-4 md:gap-0 max-md:flex-wrap text-white justify-around md:justify-between mx-8 sm:mx-12 md:mx-[100px]">
         <div className="font-semibold text-2xl  max-md:min-w-full  md:text-2xl md:text-left text-center">
           <h1>FarhanAlktr</h1>
