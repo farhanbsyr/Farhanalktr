@@ -18,11 +18,11 @@ function ProjectCard({
   const isNoteBook = useMediaQuery({ query: "(max-width: 1100px)" });
   const isNoteBook2 = useMediaQuery({ query: "(min-width: 970px)" });
 
-  const imageWidth = isNoteBook ? "w-[20rem]" : "w-[23.8rem]";
+  const imageWidth = isNoteBook ? "lg:w-[20rem]" : "lg:w-[23.8rem]";
 
   return (
     <div
-      className={`px-4 card transform duration-700 hover:scale-110 pt-4 pb-6 flex shadow-lg border-2 border-gray-100 mb-5  ${imageWidth}  2xl:w-[28rem] flex-col gap-2 justify-between rounded-md`}
+      className={`px-4 card transform duration-700 hover:scale-110 pt-4 pb-6 flex shadow-lg border-2 border-gray-100 mb-5 sm:w-[23rem] md:w-[28rem]  ${imageWidth}  2xl:w-[28rem] flex-col gap-2 justify-between rounded-md`}
     >
       <div className="flex flex-col gap-2">
         <div className=" relative overflow-hidden rounded-md bg-cover h-[12.5rem] ">

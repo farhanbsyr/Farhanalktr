@@ -15,6 +15,34 @@ import { Pagination, Navigation } from "swiper/modules";
 import { useMediaQuery } from "react-responsive";
 function Project({ project }) {
   const isTablet = useMediaQuery({ query: "(max-width: 912px)" });
+  const isMiniTablet = useMediaQuery({ query: "(max-width: 768px)" });
+
+  // swipper config
+  // const swiperConfig = {
+  //   slidesPerView: isMiniTablet ? 2 : 1,
+  //   spaceBetween: 15,
+  //   loop: true,
+  //   centeredSlides: true,
+  //   breakpoints={{
+  //     640: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 15,
+  //     },
+  //     768: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 30,
+  //     },
+  //   }},
+  //   modules: [Pagination, Navigation],
+  // };
+
+  // if (isMiniTablet) {
+  //   swiperConfig.pagination = {
+  //     clickable: true,
+  //   };
+  // } else {
+  //   swiperConfig.navigation = true;
+  // }
   return (
     <>
       {isTablet ? (
@@ -24,18 +52,33 @@ function Project({ project }) {
           </div>
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
-            loop={true}
+            spaceBetween={10}
             pagination={{
               clickable: true,
             }}
-            navigation={true}
+            centeredSlides={true}
+            loop={true}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                navigation: true,
+              },
+            }}
             modules={[Pagination, Navigation]}
-            className="mySwiper flex justify-center"
+            className="mySwiper"
           >
             {project.map((proj) => {
               return (
-                <SwiperSlide key={proj.id}>
+                <SwiperSlide
+                  key={proj.id}
+                  style={{ width: "auto" }}
+                  className="flex justify-center items-center"
+                >
                   <ProjectCard
                     images={proj.images}
                     title={proj.title}
