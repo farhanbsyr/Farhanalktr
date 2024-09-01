@@ -29,6 +29,36 @@ let project = [
   },
   {
     id: "project-2",
+    title: "iMeeting",
+    linked: "https://imeeting-farhanalktr.vercel.app/",
+    github: "https://github.com/farhanbsyr/Test-Fe",
+    images: "iMeeting.png",
+    body: "imeeting is a centralized room booking website designed for scheduling meetings, complete with several established requirements. This website is the result of a test conducted within a company.",
+    detailBD: [
+      "The website uses an API to fetch dummy data.",
+      "It includes various validations related to its functionality.",
+      "It employs Vue.js lifecycle hooks to manage the website's performance.",
+    ],
+    skills: [
+      {
+        icon: "vue-dot-js.svg",
+        altt: "vueJS",
+        lebar: "30px",
+      },
+      {
+        icon: "js.png",
+        altt: "javascript",
+        lebar: "30px",
+      },
+      {
+        icon: "bootstrap-5-logo-icon.svg",
+        altt: "bootsrap",
+        lebar: "30px",
+      },
+    ],
+  },
+  {
+    id: "project-3",
     title: "TodoApp",
     linked: "https://notes-app-with-api-ten.vercel.app",
     github: "https://github.com/farhanbsyr/NotesApp-WithAPI",
@@ -60,7 +90,7 @@ let project = [
   },
 
   {
-    id: "project-3",
+    id: "project-4",
     title: "Traffic Pricing",
     linked: "https://interactive-pricing-hazel-alpha.vercel.app",
     github: "https://github.com/farhanbsyr/InteractivePricing",
@@ -85,7 +115,7 @@ let project = [
     ],
   },
   {
-    id: "project-4",
+    id: "project-5",
     title: "Homzy",
     linked: "https://github.com/farhanbsyr/Homzy-Real-Estate.git",
     github: "https://github.com/farhanbsyr/Homzy-Real-Estate.git",
