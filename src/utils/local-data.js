@@ -55,11 +55,6 @@ let project = [
         altt: "bootsrap",
         lebar: "30px",
       },
-      {
-        icon: "js.png",
-        altt: "javascript",
-        lebar: "30px",
-      },
     ],
   },
   {
