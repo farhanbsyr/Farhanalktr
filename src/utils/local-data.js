@@ -88,34 +88,8 @@ let project = [
       },
     ],
   },
-
   {
     id: "project-4",
-    title: "Traffic Pricing",
-    linked: "https://interactive-pricing-hazel-alpha.vercel.app",
-    github: "https://github.com/farhanbsyr/InteractivePricing",
-    images: "TrafficPricing.png",
-    body: "Traffic Pricing is an interactive feature for users to determine the appropriate price for purchasing a service.",
-    skills: [
-      {
-        icon: "html-icon.svg",
-        altt: "html",
-        lebar: "30px",
-      },
-      {
-        icon: "css-icon.svg",
-        altt: "css",
-        lebar: "30px",
-      },
-      {
-        icon: "js.png",
-        altt: "javascript",
-        lebar: "30px",
-      },
-    ],
-  },
-  {
-    id: "project-5",
     title: "Homzy",
     linked: "https://github.com/farhanbsyr/Homzy-Real-Estate.git",
     github: "https://github.com/farhanbsyr/Homzy-Real-Estate.git",
